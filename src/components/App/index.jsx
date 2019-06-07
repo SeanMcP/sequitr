@@ -1,5 +1,7 @@
 import React from 'react'
 
+import './styles.css'
+
 import { AppStoreProvider } from 'stores/AppStore/AppStoreContext'
 import Router from 'components/Router'
 
