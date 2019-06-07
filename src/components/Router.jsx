@@ -2,9 +2,9 @@ import React from 'react'
 import { Router } from '@reach/router'
 
 import ROUTES from 'constants/routes'
+import HomeView from 'views/HomeView'
 
 // Replace these variables with imports
-const HomeView = () => <div>Home</div>
 const LoginView = () => <div>Login</div>
 const ManageView = () => <div>Manage</div>
 const SettingsView = () => <div>Settings</div>
