@@ -1,0 +1,8 @@
+.Home__Header {
+    padding: 0.5rem;
+}
+
+.Home__Iframe {
+    flex: 1;
+    width: 100%;
+}
