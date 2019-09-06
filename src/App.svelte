@@ -1,11 +1,32 @@
 <script>
-	export let name;
+  import Footer from "./components/Footer.svelte";
+  import Frame from "./components/Frame.svelte";
+  import Navbar from "./components/Navbar.svelte";
+  let url = "https://css-tricks.com";
+  function onSubmitUpdateUrl(e) {
+    e.preventDefault();
+    const formData = new FormData(e.target);
+    const _url = formData.get("url");
+    console.log("_url", _url);
+    url = _url;
+  }
 </script>
 
 <style>
-	h1 {
-		color: purple;
-	}
+  div {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  main {
+    flex: 1;
+  }
 </style>
 
-<h1>Hello {name}!</h1>
+<div>
+  <Navbar {url} {onSubmitUpdateUrl} />
+  <main id="main" role="main">
+    <Frame {url} />
+  </main>
+  <Footer />
+</div>
