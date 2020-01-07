@@ -13,17 +13,21 @@
 </script>
 
 <style>
-  div {
+  .App {
+    bottom: 0;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
   }
   main {
     flex: 1;
   }
 </style>
 
-<div>
+<div class="App">
   <Navbar {url} {onSubmitUpdateUrl} />
   <main id="main" role="main">
     <Frame {url} />
